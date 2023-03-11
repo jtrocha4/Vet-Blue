@@ -1,46 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vet Blue</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a href="/index.html" class="navbar-brand">
-                <img src="/img/logo.png" alt="" width="50">
-                Vet Blue
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="/servicios.html" class="nav-link">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Contactanos</a>
-                    </li>
-                </ul>
 
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vet Blue</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a href="/index.html" class="navbar-brand">
+        <img src="/img/logo.png" alt="" width="50">
+        Vet Blue
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/servicios.html" class="nav-link">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="/sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contactanos.html" class="nav-link">Contactanos</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="d-grid gap-2 col-md-2 mx-auto my-4">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar
+        cita</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <label for="form-label">Es usted cliente nuevo</label>
+              <div class="d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Si, soy cliente nuevo
+                  </label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    No, soy cliente existente
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Nombre</label>
+                <input class="form-control" type="text" name="" id="">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Apellido</label>
+                <input class="form-control" type="text" name="" id="">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Numero de telefono</label>
+                <input class="form-control" type="number" name="" id="">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Correo electronico</label>
+                <input class="form-control" type="email" name="" id="">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Nombre de la mascota</label>
+                <input class="form-control" type="text" name="" id="">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Tipo de cita</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccionar</option>
+                  <option value="1">Chequeo</option>
+                  <option value="2">Visita por enfermedad</option>
+                  <option value="3">Odontologia</option>
+                  <option value="3">Aseo de mascota</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="">Fecha preferida</label>
+                <input class="form-control" type="date" name="" id="">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Reservar cita</button>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="https://okvet.co/wp-content/uploads/2020/06/que-es-una-veterinaria.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Bienestar y vacunacion</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto neque vel voluptates
+              voluptate natus, sapiente nobis nesciunt distinctio dignissimos excepturi temporibus hic, facere
+              laboriosam, optio vitae sit culpa eum nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Neque ipsum doloribus illum iure saepe, consectetur repudiandae maiores delectus sapiente officiis ex quae
+              voluptatem odio, sint dolore suscipit asperiores dolorum accusantium!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Cirug%C3%ADa..jpg/1200px-Cirug%C3%ADa..jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Cirugia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto neque vel voluptates
+              voluptate natus, sapiente nobis nesciunt distinctio dignissimos excepturi temporibus hic, facere
+              laboriosam, optio vitae sit culpa eum nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Neque ipsum doloribus illum iure saepe, consectetur repudiandae maiores delectus sapiente officiis ex quae
+              voluptatem odio, sint dolore suscipit asperiores dolorum accusantium!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="https://streaming.ifevet.com/wp-content/uploads/2020/06/7711-scaled.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Odontologia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque itaque veritatis
+              quisquam, ullam natus, deserunt vitae mollitia autem consequuntur numquam provident maiores beatae
+              reprehenderit aperiam? Dignissimos quod consequatur dolores totam?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="https://www.vetquality.com.br/wp-content/uploads/2014/06/radiologia-veterinaria.jpg"
+            class="img-fluid rounded-start" width="100%">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Radiologia</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dolore unde sequi
+              quam alias impedit soluta repudiandae eveniet fuga voluptatibus, esse explicabo minus ipsum eos doloribus
+              aspernatur? Adipisci, provident tempora.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="https://selecciones.com.mx/wp-content/uploads/2021/10/con-que-frecuencia-lbanar-a-tus-mascotas.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Aseo</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae eligendi
+              voluptatibus distinctio aliquid? Molestias blanditiis, quis laborum nesciunt totam incidunt expedita
+              impedit quo, at alias neque praesentium omnis nostrum!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="https://www.portalveterinaria.com/upload/20210414092431SA_BackPain.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Terapia</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum rem, dicta
+              voluptatibus, atque quas minus eaque cum ipsa explicabo, temporibus doloribus corrupti ipsam aspernatur
+              tenetur sint autem nesciunt blanditiis similique!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

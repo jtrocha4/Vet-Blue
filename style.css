@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Quicksand;
+    src: url("/font/Quicksand.ttf") format("truetype");
+}
+
+p {
+    text-align: justify;
+}
+
+body {
+    background-color: ghostwhite;
+    color: black;
+    font-family: Quicksand;
+}
+
+a {
+    color: black;
+}
+
+.img-service:hover {
+    transform: scale(1.1);
+}
